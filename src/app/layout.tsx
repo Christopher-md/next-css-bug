@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 
+import {ModalProvider} from "@/contexts/ModalContext";
+import ThemeProvider from "@/contexts/ThemeContext/ThemeContext";
+
 import "./globals.scss";
 
 export const metadata: Metadata = {
@@ -13,8 +16,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html
+      lang="en"
+      suppressHydrationWarning
+    >
+      <body>
+        <ThemeProvider>
+          <ModalProvider>
+            {children}
+          </ModalProvider>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

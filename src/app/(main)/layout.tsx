@@ -1,14 +1,6 @@
 import React from "react";
-import type { Metadata } from "next";
 
-import MainLayout from "@/src/layouts/MainLayout/MainLayout";
-
-export const metadata: Metadata = {
-  title: "Account",
-  openGraph: {
-    type: "profile",
-  },
-};
+import MainLayout from "@/layouts/MainLayout/MainLayout";
 
 function Layout({
   children,

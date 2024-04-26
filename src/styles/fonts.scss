@@ -1,0 +1,102 @@
+@import "variables";
+
+$fonts: (
+
+  line-height-display: (
+    font-default: 1.13,
+    font-special: 1.5,
+  ),
+  line-height-body: (
+    font-default: 1.3,
+    font-special: 1.5,
+  ),
+  line-height-body-mobile: (
+    font-default: 1.2,
+    font-special: 1.4,
+  ),
+
+  letter-spacing-display-l: (
+    font-default: -0.03em,
+    font-special: 0.072em,
+  ),
+  letter-spacing-display-m: (
+    font-default: -0.03em,
+    font-special: 0.0576em,
+  ),
+  letter-spacing-display-s: (
+    font-default: -0.03em,
+    font-special: 0.0432em,
+  ),
+  letter-spacing-body-l: (
+    font-default: -0.03em,
+    font-special: 0.036em,
+  ),
+  letter-spacing-body-m: (
+    font-default: -0.03em,
+    font-special: 0.0288em,
+  ),
+  letter-spacing-body-s: (
+    font-default: -0.03em,
+    font-special: 0.0216em,
+  ),
+  letter-spacing-body-xs: (
+    font-default: -0.03em,
+    font-special: 0.0144em,
+  ),
+  letter-spacing-button: (
+    font-default: -0.02em,
+    font-special: 0.0288em,
+  ),
+
+  max-width-500-600: (
+    font-default: 500px,
+    font-special: 600px,
+  ),
+  max-width-346-366: (
+    font-default: 346px,
+    font-special: 366px,
+  ),
+  max-width-340-400: (
+    font-default: 340px,
+    font-special: 400px,
+  ),
+  max-width-340-360: (
+    font-default: 340px,
+    font-special: 360px,
+  ),
+  max-width-300-400: (
+    font-default: 340px,
+    font-special: 400px,
+  ),
+
+  max-height-118-136: (
+    font-default: 118px,
+    font-special: 136px,
+  ),
+  max-height-95-109: (
+    font-default: 95px,
+    font-special: 109px,
+  ),
+  max-height-77-90: (
+    font-default: 95px,
+    font-special: 109px,
+  ),
+  max-height-66-77: (
+    font-default: 66px,
+    font-special: 77px,
+  ),
+  max-height-25-28: (
+    font-default: 25px,
+    font-special: 28px,
+  ),
+  max-height-19-22: (
+    font-default: 19px,
+    font-special: 22px,
+  ),
+
+  translate-y-0-2: (
+    font-default: 0,
+    font-special: 2px,
+  ),
+
+);

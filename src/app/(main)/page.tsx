@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Paper from "@/src/components/Paper";
+import Paper from "@/components/Paper";
 
 import Field from "../../components/Field";
 
@@ -9,7 +9,7 @@ import styles from "./page.module.scss";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Paper className={styles.description}>
+      <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.tsx</code>
@@ -31,7 +31,7 @@ export default function Home() {
             />
           </a>
         </div>
-      </Paper>
+      </div>
       <div>
         <Field type="text" placeholder="Field" />
         <Field type="text" placeholder="Field" />

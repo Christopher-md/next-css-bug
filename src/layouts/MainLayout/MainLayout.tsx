@@ -1,17 +1,18 @@
-import Paper from "@/src/components/Paper";
 import React from "react";
 
+import Header from "./_components/Header/Header";
+import Footer from "./_components/Footer/Footer";
+
 type Props = {
-  className?: string;
   children: React.ReactNode;
 };
 
-export default function MainLayout({ className, children }: Props) {
+export default function MainLayout({ children }: Props) {
   return (
-    <Paper>
-      <header>Header</header>
+    <>
+      <Header/>
       <main>{children}</main>
-      <footer>Footer</footer>
-    </Paper>
+      <Footer />
+    </>
   );
 }
