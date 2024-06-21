@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
-import {ModalProvider} from "@/contexts/ModalContext";
-import ThemeProvider from "@/contexts/ThemeContext/ThemeContext";
+import { ModalProvider } from "@/contexts/ModalContext";
 
 import "./globals.scss";
 
@@ -16,16 +15,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-    >
+    <html lang="en" suppressHydrationWarning>
       <body>
-        <ThemeProvider>
-          <ModalProvider>
-            {children}
-          </ModalProvider>
-        </ThemeProvider>
+        <ModalProvider>{children}</ModalProvider>
       </body>
     </html>
   );

@@ -1,9 +1,0 @@
-@import "@/styles/themes.scss";
-@import "@/styles/mixins.scss";
-
-.dark-mode {
-  @include styles($values: $theme, $mode: "dark-theme");
-}
-.light-mode {
-  @include styles($values: $theme, $mode: "light-theme");
-}
