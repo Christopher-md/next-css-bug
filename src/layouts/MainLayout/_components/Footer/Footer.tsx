@@ -1,24 +1,7 @@
 "use client";
 
-import React, {useEffect} from "react";
-
-import SomeModal from "@/components/SomeModal";
-import {useModalContext} from "@/contexts/ModalContext";
+import React from "react";
 
 export default function Footer() {
-  const {openModal} = useModalContext();
-
-  useEffect(() => {
-    openModal({
-      key: "SomeKey",
-      Modal: SomeModal,
-      params: {}
-    })
-  }, [openModal]);
-
-  return (
-    <footer>
-      Footer
-    </footer>
-  )
+  return <footer>Footer</footer>;
 }
