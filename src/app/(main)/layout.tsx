@@ -1,7 +1,7 @@
 import React from "react";
 
-import MainLayout from "@/layouts/MainLayout/MainLayout";
 import SomeComponent from "@/components/SomeComponent";
+import MainLayout from "@/layouts/MainLayout/MainLayout";
 
 function Layout({
   children,

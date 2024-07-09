@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 
-import { ModalProvider } from "@/contexts/ModalContext";
-
 import "./globals.scss";
 
 export const metadata: Metadata = {
@@ -16,9 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
-        <ModalProvider>{children}</ModalProvider>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
