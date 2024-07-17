@@ -1,4 +1,4 @@
-@import "../../styles//mixins.scss";
+@import "@/styles/variables.scss";
 
 .field {
   width: 100%;
@@ -15,24 +15,15 @@
   padding: 0 15px;
   background: var(--background-flat-tertiary, $color-bnw-1000);
   border: 1px solid var(--border-secondary, $color-bnw-750);
-  @include radius-s;
   color: var(--content-flat-primary, $color-bnw-50);
-  @include placeholder;
   @media (max-width: $device-tablet-max) {
     height: 42px;
-  }
-  &:hover {
-    @include placeholder(
-      $color: var(--content-action-secondary-hover, $color-sun-500),
-      $color-focus: var(--content-action-secondary-hover, $color-sun-500)
-    );
   }
 }
 textarea.input {
   height: auto;
   padding-top: 12px;
   padding-bottom: 12px;
-  @include scrollbar-y;
 }
 .text {
   margin-top: 3px;

@@ -1,7 +1,6 @@
 import React from "react";
 
-import SomeComponent from "@/components/SomeComponent";
-import MainLayout from "@/layouts/MainLayout/MainLayout";
+import Field from "@/components/Field";
 
 function Layout({
   children,
@@ -9,11 +8,11 @@ function Layout({
   children: React.ReactNode;
 }) {
   return (
-    <MainLayout>
+    <>
       {/** If you comment out this line, the duplicates will disappear */}
-      <SomeComponent />
+      <Field type="text" placeholder="Field from layout.tsx" />
       {children}
-    </MainLayout>
+    </>
   );
 }
 

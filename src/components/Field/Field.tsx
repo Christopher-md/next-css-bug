@@ -5,8 +5,6 @@ import classNames from "classnames";
 
 import type { Ref } from "react";
 
-import Typography from "../Typography/Typography";
-
 import styles from "./Field.module.scss";
 
 import type { InputAttributes, InputType, Props } from "./types";
@@ -52,16 +50,6 @@ const Field = forwardRef(
           onChange={onChange}
           {...(rest as Type)}
         />
-        {typeof error === "string" && (
-          <Typography
-            tag="p"
-            size="body-xs"
-            color="error"
-            className={styles.text}
-          >
-            {error}
-          </Typography>
-        )}
       </div>
     );
   },

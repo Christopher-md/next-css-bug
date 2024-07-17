@@ -1,14 +1,9 @@
-import Field from "../../components/Field";
-
-import styles from "./page.module.scss";
+import Field from "@/components/Field";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div>
-        <Field type="text" placeholder="Field" />
-        <Field type="text" placeholder="Field" />
-      </div>
+    <main>
+      <Field type="text" placeholder="Field from page.tsx" />
     </main>
   );
 }
